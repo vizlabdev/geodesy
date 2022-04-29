@@ -9,7 +9,7 @@
     "type": "tag",
     "registry": true,
     "raw": "geodesy",
-    "name": "geodesy",
+    "name": "@vizlab/geodesy",
     "escapedName": "geodesy",
     "rawSpec": "",
     "saveSpec": null,
@@ -169,7 +169,7 @@
   ],
   "license": "MIT",
   "module": "./",
-  "name": "geodesy",
+  "name": "@vizlab/geodesy",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chrisveness/geodesy.git"
