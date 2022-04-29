@@ -7,7 +7,7 @@
 
 /* eslint-disable indent */
 
-import LatLonEllipsoidal, { Dms } from './latlon-ellipsoidal-datum.js';
+const { LatLonEllipsoidal,  Dms } = require('./latlon-ellipsoidal-datum.js');
 
 
 /**
@@ -376,4 +376,6 @@ class LatLon_Utm extends LatLonEllipsoidal {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-export { Utm as default, LatLon_Utm as LatLon, Dms };
+module.exports.Utm = Utm; 
+module.exports.LatLon = LatLon_Utm;
+module.exports.Dms = Dms;

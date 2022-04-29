@@ -7,8 +7,8 @@
 /* www.movable-type.co.uk/scripts/geodesy-library.html#latlon-ellipsoidal                         */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-import Dms      from './dms.js';
-import Vector3d from './vector3d.js';
+const { Dms }      = require('./dms.js');
+const { Vector3d } = require('./vector3d.js');
 
 
 /**
@@ -425,5 +425,7 @@ class Cartesian extends Vector3d {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-export { LatLonEllipsoidal as default, Cartesian, Vector3d, Dms };
+module.exports.LatLonEllipsoidal = LatLonEllipsoidal; 
+module.exports.Cartesian = Cartesian;
+module.exports.Vector3d = Vector3d;
+module.exports.Dms = Dms;

@@ -350,4 +350,4 @@ Number.prototype.toDegrees = function() { return this * 180 / Math.PI; };
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-export default Dms;
+module.exports.Dms =  Dms;

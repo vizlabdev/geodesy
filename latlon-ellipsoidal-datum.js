@@ -5,7 +5,7 @@
 /* www.movable-type.co.uk/scripts/geodesy-library.html#latlon-ellipsoidal-datum                  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-import LatLonEllipsoidal, { Cartesian, Dms } from './latlon-ellipsoidal.js';
+const {LatLonEllipsoidal, Cartesian, Dms } = require('./latlon-ellipsoidal.js');
 
 
 /**
@@ -399,4 +399,7 @@ class Cartesian_Datum extends Cartesian {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-export { LatLonEllipsoidal_Datum as default, Cartesian_Datum as Cartesian, datums, Dms };
+module.exports.LatLonEllipsoidal = LatLonEllipsoidal_Datum; 
+module.exports.Cartesian = Cartesian_Datum;
+module.exports.datums = datums;
+module.exports.Dms = Dms;

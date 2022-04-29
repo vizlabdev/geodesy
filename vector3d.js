@@ -253,4 +253,4 @@ Number.prototype.toDegrees = function() { return this * 180 / Math.PI; };
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-export default Vector3d;
+module.exports.Vector3d = Vector3d;
